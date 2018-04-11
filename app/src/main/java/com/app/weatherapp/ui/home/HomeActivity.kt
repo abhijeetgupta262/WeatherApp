@@ -1,9 +1,10 @@
-package com.app.weatherapp
+package com.app.weatherapp.ui.home
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.app.weatherapp.R
+import com.app.weatherapp.ui.BaseActivity
 
-class HomeActivity : AppCompatActivity() {
+class HomeActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
