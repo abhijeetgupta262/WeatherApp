@@ -1,5 +1,6 @@
 package com.app.weatherapp
 
+import com.app.weatherapp.utils.Utilities
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -14,4 +15,14 @@ class ExampleUnitTest {
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
     }
+
+    @Test
+    fun formatToYesterdayOrToday_isCorrect()
+    {
+        var forecastDate = "2018-04-15"
+        val output = "15 Apr 2018"
+        var res = Utilities.formatToYesterdayOrToday(forecastDate)
+        assertEquals("",output, res)
+    }
+
 }

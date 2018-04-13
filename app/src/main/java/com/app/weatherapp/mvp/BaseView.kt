@@ -6,5 +6,4 @@ interface BaseView
 
     fun onRequestError(errorMessage: String)
 
-    fun onSessionExpiredError()
 }

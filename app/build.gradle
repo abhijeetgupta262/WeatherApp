@@ -15,9 +15,34 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // Specifies two flavor dimensions.
+    flavorDimensions "default"
+
+    productFlavors {
+        staging {
+            dimension "default"
+            applicationId "com.app.weatherapp.staging"
+            manifestPlaceholders = [
+                    appIcon : "@mipmap/ic_launcher",
+            ]
+            buildConfigField(STRING, API_BASE_URL, API_BASE_URL_STAGING)
+            buildConfigField(STRING, APIXU_KEY, APIXU_KEY_VALUE)
+        }
+        production {
+            dimension "default"
+            applicationId "com.app.weatherapp"
+            manifestPlaceholders = [
+                    appIcon : "@mipmap/ic_launcher",
+            ]
+            buildConfigField(STRING, API_BASE_URL, API_BASE_URL_PRODUCTION)
+            buildConfigField(STRING, APIXU_KEY, APIXU_KEY_VALUE)
         }
     }
 }
@@ -26,8 +51,20 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation "com.android.support:design:27.1.1"
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+
+    // Retrofit
+    // http://square.github.io/retrofit/
+    implementation "com.squareup.retrofit2:retrofit:2.4.0"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:2.4.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.4.0"
+
+    // RxAndroid
+    // https://github.com/ReactiveX/RxAndroid
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
 }

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Fonts-->
+    <dimen name="h0">80sp</dimen>
+    <dimen name="h1">45sp</dimen>
+    <dimen name="h2">42sp</dimen>
+    <dimen name="h3">40sp</dimen>
+    <dimen name="h4">36sp</dimen>
+    <dimen name="h5">32sp</dimen>
+    <dimen name="h6">30sp</dimen>
+    <dimen name="h7">28sp</dimen>
+    <dimen name="h8">25sp</dimen>
+    <dimen name="h9">22sp</dimen>
+    <dimen name="h10">20sp</dimen>
+    <dimen name="h11">18sp</dimen>
+    <dimen name="h12">16sp</dimen>
+    <dimen name="h13">15sp</dimen>
+    <dimen name="h14">12sp</dimen>
+    <dimen name="h15">10sp</dimen>
+
+
+    <!--Standard Dimensions-->
+    <dimen name="dimen_0_dp">0dp</dimen>
+    <dimen name="dimen_1_dp">1dp</dimen>
+    <dimen name="dimen_2_dp">2dp</dimen>
+    <dimen name="dimen_3_dp">3dp</dimen>
+    <dimen name="dimen_4_dp">4dp</dimen>
+    <dimen name="dimen_5_dp">5dp</dimen>
+    <dimen name="dimen_10_dp">10dp</dimen>
+    <dimen name="dimen_15_dp">15dp</dimen>
+    <dimen name="dimen_18_dp">18dp</dimen>
+    <dimen name="dimen_20_dp">20dp</dimen>
+    <dimen name="dimen_25_dp">25dp</dimen>
+    <dimen name="dimen_30_dp">30dp</dimen>
+    <dimen name="dimen_38_dp">38dp</dimen>
+    <dimen name="dimen_40_dp">40dp</dimen>
+    <dimen name="dimen_45_dp">45dp</dimen>
+    <dimen name="dimen_50_dp">50dp</dimen>
+    <dimen name="dimen_60_dp">60dp</dimen>
+    <dimen name="dimen_80_dp">80dp</dimen>
+    <dimen name="dimen_100_dp">100dp</dimen>
+    <dimen name="dimen_120_dp">120dp</dimen>
+    <dimen name="dimen_130_dp">130dp</dimen>
+    <dimen name="dimen_150_dp">150dp</dimen>
+    <dimen name="dimen_200_dp">200dp</dimen>
+    <dimen name="dimen_250_dp">250dp</dimen>
+    <dimen name="dimen_350_dp">350dp</dimen>
+
+</resources>
