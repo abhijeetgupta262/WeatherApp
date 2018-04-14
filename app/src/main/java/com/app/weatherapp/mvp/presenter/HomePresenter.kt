@@ -20,7 +20,7 @@ class HomePresenter(val homeView: HomeView) : BasePresenter() {
     /* =================================== Class Variable ======================================= */
 
     // Variable for CompositeDisposable
-    private var mSubscription: CompositeDisposable = CompositeDisposable()
+    private var mSubscription : CompositeDisposable = CompositeDisposable()
 
     /* ============================= Implemented Interface Method =============================== */
 
