@@ -5,7 +5,15 @@ import io.reactivex.Observable
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface WeatherAPIService {
+/**
+ * This class/interface is used for APIs. It holds all API call methods.
+ */
+interface WeatherAPIService
+{
+    /**
+     * API for weather forecast
+     */
     @GET(APIConstants.HISTORY_ACTION)
-    fun getWeatherForecast(@Query("key") key: String, @Query("q") q: String, @Query("days") days: Int): Observable<ForecastData>
+    fun getWeatherForecast(@Query("key") key: String, @Query("q") q: String,
+                           @Query("days") days: Int): Observable<ForecastData>
 }

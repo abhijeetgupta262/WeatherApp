@@ -1,6 +1,8 @@
 package com.app.weatherapp.mvp.model
 
-
+/**
+ * This class/model is used for holding the temperature forecast data.
+ */
 data class ForecastData(
         val location: Location,
         val current: Current,

@@ -1,5 +1,8 @@
 package com.app.weatherapp.common
 
+/**
+ * This class is used to hold the constants for the application.
+ */
 class Constants
 {
     companion object {

@@ -21,7 +21,7 @@ class ExampleUnitTest {
     {
         var forecastDate = "2018-04-15"
         val output = "15 Apr 2018"
-        var res = Utilities.formatToYesterdayOrToday(forecastDate)
+        var res = Utilities.formatDateToYesterdayOrToday(forecastDate)
         assertEquals("",output, res)
     }
 

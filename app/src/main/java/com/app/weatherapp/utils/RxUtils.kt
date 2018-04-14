@@ -2,6 +2,9 @@ package com.app.weatherapp.utils
 
 import io.reactivex.disposables.CompositeDisposable
 
+/**
+ * This class is used to hold the utility methods for RXAndroid.
+ */
 class RxUtils
 {
      companion object {

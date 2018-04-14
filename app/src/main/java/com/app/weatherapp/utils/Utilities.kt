@@ -4,11 +4,18 @@ import android.net.ParseException
 import java.text.SimpleDateFormat
 import java.util.*
 
+/**
+ * This class is used to hold the utility methods for Application.
+ */
 class Utilities {
 
     companion object {
+        /**
+         * This method is used to format the date for display.
+         * @param date : Date in yyyy-MM-dd format
+         */
         @Throws(ParseException::class)
-        fun formatToYesterdayOrToday(date: String): String {
+        fun formatDateToYesterdayOrToday(date: String): String {
             val dateTime = SimpleDateFormat("yyyy-MM-dd", Locale.US).parse(date)
             val calendar = Calendar.getInstance()
             calendar.time = dateTime

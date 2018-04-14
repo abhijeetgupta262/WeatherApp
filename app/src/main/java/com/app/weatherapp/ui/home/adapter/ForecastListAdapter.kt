@@ -8,8 +8,19 @@ import com.app.weatherapp.R
 import com.app.weatherapp.mvp.model.Forecastday
 import com.app.weatherapp.ui.home.adapter.viewholder.ForecastItemViewHolder
 
-class ForecastListAdapter(private val context: Context, private val dataSource: List<Forecastday>) : RecyclerView.Adapter<ForecastItemViewHolder>() {
+/**
+ * This class is used as presenter for forecast list adapter.
+ * @param context : Current Context
+ * @param dataSource : List of Forecastday
+ */
+class ForecastListAdapter(private val context: Context, private val dataSource: List<Forecastday>)
+    : RecyclerView.Adapter<ForecastItemViewHolder>() {
 
+
+    /* =================================== Class Variable ======================================= */
+
+
+    /* ============================= Implemented Interface Method =============================== */
 
     override fun getItemCount(): Int {
         return dataSource.size
@@ -25,5 +36,7 @@ class ForecastListAdapter(private val context: Context, private val dataSource: 
             holder.bindItems(context, dataSource[position])
         }
     }
+
+    /* ================================== User Define Method ==================================== */
 
 }
