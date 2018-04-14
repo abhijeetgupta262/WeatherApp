@@ -1,6 +1,7 @@
 package com.app.weatherapp.mvp.presenter
 
 import com.app.weatherapp.BuildConfig
+import com.app.weatherapp.common.Constants
 import com.app.weatherapp.mvp.BasePresenter
 import com.app.weatherapp.mvp.model.ForecastData
 import com.app.weatherapp.mvp.view.HomeView
@@ -27,7 +28,7 @@ class HomePresenter(val homeView: HomeView) : BasePresenter() {
 
         // Subscribe for forecast request
         mSubscription.add(WeatherAPIFactory.create()
-                .getWeatherForecast(BuildConfig.APIUX_KEY, "Bengaluru", 7)
+                .getWeatherForecast(BuildConfig.APIUX_KEY, Constants.DEFAULT_LOCATION, Constants.DEFAULT_DAYS)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.io())
                 .subscribe({ t: ForecastData ->

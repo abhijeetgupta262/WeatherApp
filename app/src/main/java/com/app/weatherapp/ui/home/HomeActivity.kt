@@ -1,6 +1,7 @@
 package com.app.weatherapp.ui.home
 
 import android.os.Bundle
+import android.support.v4.content.ContextCompat
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
@@ -92,6 +93,7 @@ class HomeActivity : BaseActivity(), HomeView {
 
         rcv_home_forecast_list.layoutManager = linearLayoutManager
         val dividerItemDecoration = DividerItemDecoration(rcv_home_forecast_list.context, linearLayoutManager.orientation)
+        dividerItemDecoration.setDrawable(ContextCompat.getDrawable(this, R.drawable.divider)!!)
         rcv_home_forecast_list.addItemDecoration(dividerItemDecoration)
         rcv_home_forecast_list.adapter = adapter
 

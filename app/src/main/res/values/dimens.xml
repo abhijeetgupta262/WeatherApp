@@ -2,7 +2,7 @@
 <resources>
 
     <!--Fonts-->
-    <dimen name="h0">80sp</dimen>
+    <dimen name="h0">100sp</dimen>
     <dimen name="h1">45sp</dimen>
     <dimen name="h2">42sp</dimen>
     <dimen name="h3">40sp</dimen>
@@ -19,8 +19,8 @@
     <dimen name="h14">12sp</dimen>
     <dimen name="h15">10sp</dimen>
 
-
     <!--Standard Dimensions-->
+    <dimen name="dimen_minus_20_dp">-20dp</dimen>
     <dimen name="dimen_0_dp">0dp</dimen>
     <dimen name="dimen_1_dp">1dp</dimen>
     <dimen name="dimen_2_dp">2dp</dimen>
@@ -28,6 +28,7 @@
     <dimen name="dimen_4_dp">4dp</dimen>
     <dimen name="dimen_5_dp">5dp</dimen>
     <dimen name="dimen_10_dp">10dp</dimen>
+    <dimen name="dimen_12_dp">12dp</dimen>
     <dimen name="dimen_15_dp">15dp</dimen>
     <dimen name="dimen_18_dp">18dp</dimen>
     <dimen name="dimen_20_dp">20dp</dimen>
@@ -43,6 +44,7 @@
     <dimen name="dimen_120_dp">120dp</dimen>
     <dimen name="dimen_130_dp">130dp</dimen>
     <dimen name="dimen_150_dp">150dp</dimen>
+    <dimen name="dimen_180_dp">180dp</dimen>
     <dimen name="dimen_200_dp">200dp</dimen>
     <dimen name="dimen_250_dp">250dp</dimen>
     <dimen name="dimen_350_dp">350dp</dimen>

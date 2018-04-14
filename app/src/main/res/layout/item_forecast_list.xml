@@ -16,6 +16,8 @@
         android:layout_weight="1"
         android:gravity="left"
         android:maxLines="1"
+        android:fontFamily="@font/opensans_regular"
+        android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="@dimen/h14" />
 
@@ -36,6 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dimen_5_dp"
+            android:fontFamily="@font/opensans_regular"
             android:maxLines="1"
             android:textSize="@dimen/h14" />
 
@@ -47,6 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="right"
+        android:fontFamily="@font/opensans_regular"
         android:maxLines="1"
         android:textSize="@dimen/h14" />
 
